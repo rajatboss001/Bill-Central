@@ -1,0 +1,1250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bill Central</title>
+  <link rel="icon" type="image/ico" href="/favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <style type="text/tailwindcss">
+    @theme {
+        --leading-100: 100%;
+        --leading-109: 109%;
+        --leading-110: 110%;
+        --leading-111: 111%;
+        --leading-113: 113%;
+        --leading-115: 115%;
+        --leading-121: 121%;
+        --leading-150: 150%;
+        --leading-163: 163%;
+
+        --text-custom-xl: 22px;
+        --text-custom-3xl: 32px;
+        --text-custom-2xl: 28px;
+        --text-custom-6xl: 64px;
+        --text-custom-4xl: 38px;
+
+        --color-dark: #010101;
+        --color-sky-blue: #00a8e8;
+        --color-deep-blue: #00171f;
+        --color-light-sky: #EAF9FF;
+        --color-light-blue: #EAF9FFF0;
+        --color-emerald-green: #03B57A;
+        --color-cerulean-blue: #007EA7;
+        --color-navy-mist: #00171F1A;
+        --color-custom-gray: #4b4b4b;
+        --color-prussian-blue: #003459;
+
+        --animate-marquee: marquee 25s linear infinite; @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } } }
+        
+      
+    </style>
+</head>
+
+<body">
+  <section>
+    <div class="bg-[url(/assets/images/webp/hero-bg.png)] rounded-bl-[200px]">
+      <header class="py-4 px-5">
+        <nav class="max-w-[1140px] mx-auto flex items-center justify-between">
+          <a href="#">
+            <img src="/assets/images/svg/logo.svg" alt="logo" />
+          </a>
+          <input type="checkbox" id="check" class="hidden peer">
+          <label for="check"
+            class="menu-btn cursor-pointer hidden max-lg:block z-1001 text-4xl max-[576px]:text-4xl">
+            ☰
+          </label>
+          <div class="nav-right flex justify-between max-w-[819px] w-full
+            transition-all duration-600
+            max-lg:fixed
+             max-lg:max-w-full
+            max-lg:w-full
+            max-lg:min-h-screen
+            max-lg:bg-prussian-blue
+             max-lg:z-20
+             max-lg:flex-col
+             max-lg:gap-4
+             max-lg:top-0
+             max-lg:-left-full
+             max-lg:justify-center
+             max-lg:items-center
+             peer-checked:left-0">
+            <ul class="flex items-center gap-6 max-lg:flex-col">
+              <li>
+                <a class="text-base helvetica-lite leading-113 text-white block relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full" href="#">About</a>
+              </li>
+              <li>
+                <a class="text-base helvetica-lite leading-113 text-white block relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full" href="#">How It Works</a>
+              </li>
+              <li>
+                <a class="text-base helvetica-lite leading-113 text-white block relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full" href="#">Services</a>
+              </li>
+              <li>
+                <a class="text-base helvetica-lite leading-113 text-white block relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full" href="#">Testimonials</a>
+              </li>
+              <li>
+                <a class="text-base helvetica-lite leading-113 text-white block relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full" href="#">Why Us</a>
+              </li>
+              <li>
+                <a class="text-base helvetica-lite leading-113 text-white block relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full" href="#">FAQ</a>
+              </li>
+            </ul>
+            <button class="group helvetica-bold text-base leading-100 cursor-pointer flex items-center gap-[3px] bg-white rounded-tr-[50px] rounded-br-[50px] rounded-bl-[20px] px-5 py-3
+              transition-all duration-300 ease-in-out hover:bg-sky-blue hover:text-white">
+              Get Started
+              <span class="w-6 h-6 flex items-center justify-center">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-white transition-all duration-300 ease-in-out"
+                    d="M0.966797 13.9668L13.9668 0.966797M1.4868 0.966797H13.9668V13.4468" stroke="#00171F"
+                    stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </button>
+          </div>
+
+        </nav>
+      </header>
+      <div class="container-hero max-w-[1243px] mx-auto pt-[53px] px-5 max-xl:py-20 max-md:py-10">
+        <div class="row-hero flex max-xl:flex-col gap-y-10">
+          <div class="left max-w-[582px] mt-[69px] max-xl:mt-0">
+            <h1 class="helvetica-lite text-white leading-110 text-custom-6xl max-md:text-5xl">
+              Easily Compare
+              <span class="helvetica-bold text-custom-6xl max-md:text-5xl">Energy, Gas, and Internet</span>
+              <span class="helvetica-lite text-custom-6xl ldading-110 max-md:text-5xl">
+                Plans</span>
+            </h1>
+            <p class="helvetica-lite text-base text-white leading-150 max-w-[506px] mt-4 mb-[42px] max-sm:md:-5">
+              Find and switch to the best energy, gas, and internet plans with
+              ease. Our platform simplifies your search, letting you compare
+              providers and make informed decisions, all in one place.
+            </p>
+            <div
+              class="max-w-[476px] flex gap-3 bg-white py-[9px] pl-[22px] pr-[9px] rounded-tr-[100px] rounded-br-[100px] rounded-bl-[20px]">
+              <input type="text" placeholder="Start typing your address"
+                class="placeholder:text-deep-blue/50 w-full font-normal text-base leading-100 outline-none" />
+              <button class="group helvetica-bold leading-113 flex cursor-pointer gap-[3px] items-center px-5 py-3
+  bg-sky-blue text-white
+  rounded-tr-[50px] rounded-br-[50px] rounded-bl-[20px]
+  transition-all duration-300 ease-in-out
+  hover:bg-white hover:text-sky-blue
+  hover:ring-1 hover:ring-bg-sky-blue">
+                Compare
+                <span class="w-6 h-6 flex items-center justify-center">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="transition-colors duration-300">
+
+                    <path d="M0.966797 13.9668L13.9668 0.966797M1.4868 0.966797H13.9668V13.4468" stroke="currentColor"
+                      stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+
+              </button>
+            </div>
+          </div>
+          <div class="right mb-[-139px] max-xl:m-0 max-w[681px] w-full">
+            <img width="621" height="816" src="/assets/images/png/hero-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-two max-w-[1180px] mx-auto px-5 max-lg:pt-20 max-md:pt-10">
+      <p class="text-prussian-blue mt-[54px] max-xl:mt-0 helvetica-lite max-w-[548px] text-custom-4xl leading-111">
+        More than <span class="text-custom-4xl helvetica-bold">80,000</span>+
+        companies trust bill central
+      </p>
+      <!-- Logo Marquee -->
+      <div class="mt-[65px] overflow-hidden">
+        <div class="flex w-max animate-marquee items-center gap-[80px]"> <!-- First Set -->
+          <div class="flex shrink-0 items-center gap-[80px]"> <img width="126.67" height="62.12"
+              src="/assets/images/png/logo-1.png" alt="1srenergy" /> <img width="102.31" height="42"
+              src="/assets/images/png/logo-2.png" alt="Blue-NRG" /> <img width="94.39" height="32.88"
+              src="/assets/images/png/logo-3.png" alt="dodo" /> <img width="49.94" height="62.12"
+              src="/assets/images/png/logo-4.png" alt="origin" /> <img width="62.12" height="62.12"
+              src="/assets/images/png/logo-5.png" alt="ovo" /> <img width="84.04" height="43.85"
+              src="/assets/images/png/logo-6.png" alt="sumo" /> <img width="63.33" height="62.12"
+              src="/assets/images/png/logo-7.png" alt="agl" /> </div> <!-- Duplicate Set: Seamless Loop -->
+          <div class="flex shrink-0 items-center gap-[80px]" aria-hidden="true"> <img width="126.67" height="62.12"
+              src="/assets/images/png/logo-1.png" alt="" /> <img width="102.31" height="42"
+              src="/assets/images/png/logo-2.png" alt="" /> <img width="94.39" height="32.88"
+              src="/assets/images/png/logo-3.png" alt="" /> <img width="49.94" height="62.12"
+              src="/assets/images/png/logo-4.png" alt="" /> <img width="62.12" height="62.12"
+              src="/assets/images/png/logo-5.png" alt="" /> <img width="84.04" height="43.85"
+              src="/assets/images/png/logo-6.png" alt="" /> <img width="63.33" height="62.12"
+              src="/assets/images/png/logo-7.png" alt="" /> </div>
+        </div>
+      </div>
+      <div class="row-p-2 flex justify-between max-lg:flex-wrap gap-y-10 items-center max-xl:mt-20 mt-[162px] gap-x-5">
+        <div class="left-p-2">
+          <img width="507" height="451" class="" src="/assets/images/png/phase-2.png" alt="Energy-plan" />
+        </div>
+        <div class="right-p-2 max-w-[558px]">
+          <h2 class="text-deep-blue text-5xl helvetica-bold max-w-[409px] leading-111">
+            Switching Energy
+            <span class="helvetica-lite text-deep-blue text-5xl">Made Simple</span>
+          </h2>
+          <p class="helvetica-lite text-base text-deep-blue mt-4 leading-150">
+            Say goodbye to confusing energy plans! We simplify the process by
+            providing clear and competitive electricity and gas
+            recommendations. Whether you're moving or just seeking a better
+            deal, our platform connects you with the best energy providers
+            quickly and easily, helping you save on energy bills.
+          </p>
+          <p class="text-prussian-blue helvetica-lite mt-[38px] mb-7 leading-109 text-2xl">
+            Benefits of Comparing Energy Plans
+          </p>
+          <ul class="list-disc pl-5 flex gap-2 flex-col">
+            <li class="text-base helvetica-lite text-deep-blue helvetica-lite leading-150">
+              Save money by finding cheaper deals.
+            </li>
+            <li class="text-base helvetica-lite text-deep-blue helvetica-lite leading-150">
+              Get better customer service.
+            </li>
+            <li class="text-base helvetica-lite text-deep-blue helvetica-lite leading-150">
+              Explore greener, more sustainable energy options.
+            </li>
+          </ul>
+          <button class="helvetica-lite leading-113 gap-[3px] flex items-center cursor-pointer mt-[42px] py-3 px-5 bg-sky-blue rounded-tr-[50px] rounded-br-[50px] rounded-bl-[20px] text-white
+            transition-all duration-300 ease-in-out
+           hover:bg-white hover:text-sky-blue
+            hover:ring-1 hover:ring-bg-sky-blue">
+            Compare With Us
+            <span class="w-6 h-6 flex items-center justify-center">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="transition-colors duration-300">
+
+                    <path d="M0.966797 13.9668L13.9668 0.966797M1.4868 0.966797H13.9668V13.4468" stroke="currentColor"
+                      stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-three pt-[162px] mx-auto max-w-[1440px] max-xl:px-5 max-xl:pt-20 max-md:pt-10">
+      <h2 class="helvetica-lite text-5xl text-deep-blue text-center leading-111">
+        Simple Steps to
+        <span class="text-5xl helvetica-bold text-deep-blue">Switch</span>
+      </h2>
+      <p
+        class="text-base helvetica-lite text-custom-gray/90 max-w-[610px] text-center mx-auto leading-163 mt-4 mb-[58px]">
+        Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget
+        consectetur mi. Vulputate sapien a a bibendum
+      </p>
+      <div class="row-three">
+        <div class="flex max-xl:flex-wrap">
+          <div class="relative group cursor-pointer overflow-hidden">
+            <img width="360" height="661" src="/assets/images/png/p3-Card.png" alt="Card" />
+            <div
+              class="bg-prussian-blue p-8 max-w-[360px] absolute translate-y-full transition-all duration-300 group-hover:translate-y-0 bottom-0 w-full">
+              <p class="text-white helvetica-lite text-custom-3xl leading-110 mb-[14px]">
+                3. Switch Easily
+              </p>
+              <p class="text-white helvetica-lite text-base max-w-[286px]">
+                Complete the process in just a few clicks. We’ll handle the
+                rest and ensure a smooth transition to your new provider.
+              </p>
+            </div>
+            <div
+              class="div [writing-mode:vertical-rl] bg-light-blue w-full h-full inset-0 absolute flex items-center justify-end pb-[32px] transition-all duration-300 group-hover:-translate-y-full cursor-pointer">
+              <h2 class="text-custom-3xl helvetica-lite rotate-180 leading-110">1. Enter Your Location and Preferences
+              </h2>
+            </div>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden">
+            <img width="360" height="661" src="/assets/images/png/p3-Card-2.png" alt="Card" />
+            <div
+              class="bg-prussian-blue p-8 max-w-[360px] absolute translate-y-full transition-all duration-300 group-hover:translate-y-0 bottom-0 w-full">
+              <p class="text-white helvetica-lite text-custom-3xl leading-110 mb-[14px]">
+                3. Switch Easily
+              </p>
+              <p class="text-white helvetica-lite text-base max-w-[286px]">
+                Complete the process in just a few clicks. We’ll handle the
+                rest and ensure a smooth transition to your new provider.
+              </p>
+            </div>
+            <div
+              class="div [writing-mode:vertical-rl] bg-light-blue w-full h-full inset-0 absolute flex items-center justify-end pb-[32px] transition-all duration-300 group-hover:-translate-y-full cursor-pointer">
+              <h2 class="text-custom-3xl helvetica-lite rotate-180 leading-110">2. Compare Providers</h2>
+            </div>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden">
+            <img width="360" height="661" src="/assets/images/png/p3-Card-3.png" alt="Card" />
+            <div
+              class="bg-prussian-blue p-8 max-w-[360px] absolute translate-y-full transition-all duration-300 group-hover:translate-y-0 bottom-0 w-full">
+              <p class="text-white helvetica-lite text-custom-3xl leading-110 mb-[14px]">
+                3. Switch Easily
+              </p>
+              <p class="text-white helvetica-lite text-base max-w-[286px]">
+                Complete the process in just a few clicks. We’ll handle the
+                rest and ensure a smooth transition to your new provider.
+              </p>
+            </div>
+            <div
+              class="div [writing-mode:vertical-rl] bg-light-blue w-full h-full inset-0 absolute flex items-center justify-end pb-[32px] transition-all duration-300 group-hover:-translate-y-full cursor-pointer">
+              <h2 class="text-custom-3xl helvetica-lite rotate-180 leading-110">3. Switch Easily</h2>
+            </div>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden">
+            <img width="360" height="661" src="/assets/images/png/p3-Card-4.png" alt="Card" />
+            <div
+              class="bg-prussian-blue p-8 max-w-[360px] absolute translate-y-full transition-all duration-300 group-hover:translate-y-0 bottom-0 w-full">
+              <p class="text-white helvetica-lite text-custom-3xl leading-110 mb-[14px]">
+                3. Switch Easily
+              </p>
+              <p class="text-white helvetica-lite text-base max-w-[286px]">
+                Complete the process in just a few clicks. We’ll handle the
+                rest and ensure a smooth transition to your new provider.
+              </p>
+            </div>
+            <div
+              class="div [writing-mode:vertical-rl] bg-light-blue w-full h-full inset-0 absolute flex items-center justify-end pb-[32px] transition-all duration-300 group-hover:-translate-y-full cursor-pointer">
+              <h2 class="text-custom-3xl helvetica-lite rotate-180 leading-110">4. Choose the Best Plan</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="px-5">
+    <div class="container-for mx-auto max-w-[1140px] pt-[162px] max-lg:pt-20 max-md:pt-10">
+      <div class="row-for flex justify-between items-center max-lg:items-start max-lg:flex-col gap-x-5 gap-y-10">
+        <div class="left-for max-w-[558px]">
+          <h2 class="text-deep-blue helvetica-lite text-5xl max-sm:text-4xl max-w-[456px] leading-111">
+            Comprehensive Utility
+            <span class="text-deep-blue helvetica-bold text-5xl max-sm:text-4xl">Comparisons</span>
+          </h2>
+          <div class="w-full max-w-[558px] bg-white flex flex-col gap-6 mt-[46px]">
+
+            <!-- ================================= -->
+            <!-- FAQ 1: Selected / Open -->
+            <!-- ================================= -->
+            <div class="border border-black/10 shadow-[0px_0px_13.9px_0px_#0000001A]">
+
+              <input type="checkbox" id="faq-1" class="peer hidden" checked>
+
+              <label for="faq-1" class="group flex cursor-pointer items-center gap-6 p-[14px] open::pb-0 select-none">
+
+                <!-- Icon -->
+                <div class="flex items-center justify-center rounded-full w-16 h-16 bg-light-sky text-white transition-all duration-300 group-hover:bg-prussian-blue">
+                  <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_83479_2726)">
+                      <path
+                        d="M13.0123 12.7354C12.4622 12.7354 12.0146 13.1829 12.0146 13.733C12.0146 14.2831 12.4622 14.7307 13.0123 14.7307H14.01V13.733C14.01 13.1829 13.5624 12.7354 13.0123 12.7354Z"
+                        fill="#007EA7" class="transition-colors duration-300 group-hover:fill-white"/>
+                      <path
+                        d="M20.9879 12.7354C20.4377 12.7354 19.9902 13.1829 19.9902 13.733V14.7307H20.9879C21.5379 14.7307 21.9855 14.2831 21.9855 13.733C21.9855 13.1829 21.538 12.7354 20.9879 12.7354Z"
+                        fill="#007EA7"class="transition-colors duration-300 group-hover:fill-white" />
+                      <path d="M17.9984 16.7227H16.0029V25.3614H17.9984V16.7227Z" fill="#007EA7" class="transition-colors duration-300 group-hover:fill-white"/>
+                      <path d="M23.8554 31.6738H10.1445V34H23.8554V31.6738Z" fill="#007EA7" class="transition-colors duration-300 group-hover:fill-white"/>
+                      <path
+                        d="M25.0579 3.41425C23.0265 1.31648 20.3033 0.106423 17.3898 0.00681343C14.3331 -0.0975772 11.4397 1.00052 9.24298 3.09889C7.04912 5.19467 5.8214 8.02995 5.78594 11.0825C5.75692 13.5814 6.53275 15.9547 8.02934 17.9461C9.44685 19.8323 10.1201 22.1926 10.1438 25.3619H14.0106V16.7233H13.0129C11.3643 16.7233 10.023 15.382 10.023 13.7334C10.023 12.0848 11.3643 10.7436 13.0129 10.7436C14.6615 10.7436 16.0027 12.0848 16.0027 13.7334V14.7311H17.9981V13.7334C17.9981 12.0848 19.3393 10.7436 20.9879 10.7436C22.6365 10.7436 23.9778 12.0848 23.9778 13.7334C23.9778 15.382 22.6365 16.7233 20.9879 16.7233H19.9903V25.3619H23.8574C23.8905 22.192 24.5711 19.8215 25.9922 17.9183C27.4468 15.9704 28.2156 13.6526 28.2156 11.2153C28.2156 8.28754 27.0942 5.51707 25.0579 3.41425Z"
+                        fill="#007EA7" class="transition-colors duration-300 group-hover:fill-white"/>
+                      <path d="M23.8554 27.3545H10.1445V29.682H23.8554V27.3545Z" fill="#007EA7" class="transition-colors duration-300 group-hover:fill-white"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_83479_2726">
+                        <rect width="34" height="34" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <!-- Title + Arrow -->
+                <div class="flex min-w-0 flex-1 items-center justify-between gap-2">
+
+                  <h3 class="helvetica-light text-2xl text-deep-blue leading-109">
+                    Electricity Plan Comparisons
+                  </h3>
+
+                  <!-- Arrow -->
+                  <div class="flex items-center justify-center">
+                    <img width="15" height="9" src="/assets/images/svg/faq-arro.svg" alt="arrow">
+                  </div>
+
+                </div>
+
+              </label>
+
+              <!-- Description -->
+              <div class="grid grid-rows-[0fr] transition-all duration-300 peer-checked:grid-rows-[1fr]">
+
+                <div class="overflow-hidden">
+
+                  <p class="px-4 pb-4 pl-[102px] helvetica-light text-base font-normal leading-113 text-deep-blue">
+                    Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best
+                    provider.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================================= -->
+            <!-- FAQ 2: Closed -->
+            <!-- ================================= -->
+            <div class=" border border-black/10 shadow-[0px_0px_13.9px_0px_#0000001A]">
+
+              <input type="checkbox" id="faq-2" class="peer hidden">
+
+              <label for="faq-2" class="group flex cursor-pointer items-center gap-6 p-[14px] select-none">
+
+                <!-- Icon -->
+                <div class="flex items-center justify-center rounded-full w-16 h-16 bg-light-sky transition-all duration-300 group-hover:bg-prussian-blue">
+
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_83479_2754)">
+                      <path
+                        d="M3.75 0C2.38662 0 1.25 1.13662 1.25 2.5V28.75C1.25007 29.4403 1.80967 29.9999 2.5 30H17.5C18.1903 29.9999 18.7499 29.4403 18.75 28.75V23.125C18.75 22.7798 19.0298 22.5 19.375 22.5H20C20.7052 22.5 21.25 23.0448 21.25 23.75V25C21.25 27.0563 22.9437 28.75 25 28.75C27.0563 28.75 28.75 27.0563 28.75 25V8.75C28.75 7.57076 28.1944 6.45706 27.251 5.74951L23.2495 2.74902C22.6388 2.29109 21.8582 2.51259 21.499 3.00049C21.0895 3.55675 21.1974 4.33718 21.7505 4.75098L23.2495 5.87402C23.5648 6.11016 23.7502 6.48111 23.75 6.875V10C23.75 11.153 24.5589 12.1419 25.6323 12.4219C25.9656 12.5088 26.25 12.7798 26.25 13.125V25C26.25 25.7052 25.7052 26.25 25 26.25C24.2948 26.25 23.75 25.7052 23.75 25V23.75C23.75 21.6937 22.0563 20 20 20H19.375C19.0298 20 18.75 19.7202 18.75 19.375V2.5C18.75 1.13662 17.6134 3.75e-08 16.25 3.75e-08L3.75 0ZM4.375 2.5H15.625C15.9712 2.5 16.25 2.77875 16.25 3.125V11.875C16.25 12.2212 15.9712 12.5 15.625 12.5H4.375C4.02875 12.5 3.75 12.2212 3.75 11.875V3.125C3.75 2.77875 4.02875 2.5 4.375 2.5Z"
+                        fill="#007EA7" class="transition-colors duration-300 group-hover:fill-white"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_83479_2754">
+                        <rect width="30" height="30" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+
+                </div>
+
+                <!-- Title + Arrow -->
+                <div class="flex min-w-0 flex-1 items-center justify-between gap-2">
+
+                  <h3 class="helvetica-light text-2xl text-deep-blue leading-109">
+                    Gas Plan Comparisons
+                  </h3>
+
+                  <!-- Arrow -->
+                  <div class="flex items-center justify-center">
+                    <img width="15" height="9" src="/assets/images/svg/faq-arro.svg" alt="arrow">
+                  </div>
+
+                </div>
+
+              </label>
+
+              <!-- Description -->
+              <div class="grid grid-rows-[0fr] transition-all duration-300 peer-checked:grid-rows-[1fr]">
+
+                <div class="overflow-hidden">
+
+                  <p class="px-4 pb-4 pl-[102px] helvetica-light text-base font-normal leading-113 text-deep-blue">
+                    Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best
+                    provider.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================================= -->
+            <!-- FAQ 3: Closed -->
+            <!-- ================================= -->
+            <div class=" border border-black/10 shadow-[0px_0px_13.9px_0px_#0000001A]">
+
+              <input type="checkbox" id="faq-3" class="peer hidden">
+
+              <label for="faq-3"
+                class="group flex cursor-pointer items-center gap-6 p-[14px] select-none peer-checked:[&_svg]:rotate-180">
+
+                <!-- Icon -->
+                <div class="flex items-center justify-center rounded-full w-16 h-16 bg-light-sky transition-all duration-300 group-hover:bg-prussian-blue">
+
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_83479_2762)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M29.9998 15.4216C29.9998 13.0491 29.3861 10.8216 28.3111 8.88538C32.8936 -1.48712 23.3998 0.0316301 22.8711 0.13538C20.8598 0.52913 18.9998 1.16038 17.2836 1.96163C17.0288 1.94745 16.7737 1.94036 16.5186 1.94038C10.1123 1.94038 4.74982 6.40788 3.37732 12.3979C6.75482 8.61038 9.11732 7.08163 10.5323 6.47038C10.3073 6.67205 10.0857 6.8758 9.86732 7.08163L9.65482 7.28788C9.51065 7.42455 9.36815 7.56288 9.22732 7.70288L8.98232 7.95288C8.85732 8.07871 8.7344 8.20538 8.61357 8.33288L8.35857 8.60288C7.8619 9.1331 7.38249 9.67922 6.92107 10.2404C6.74803 10.449 6.57719 10.6594 6.40857 10.8716L6.15857 11.1879L5.92982 11.4879L5.67232 11.8279L5.49732 12.0691C4.98928 12.7625 4.50239 13.4712 4.03732 14.1941L4.03482 14.1979C3.91899 14.3787 3.80649 14.557 3.69732 14.7329L3.67982 14.7616C3.56982 14.9375 3.46357 15.1116 3.36107 15.2841L3.34982 15.3016C3.07232 15.7658 2.8169 16.2087 2.58357 16.6304C1.36982 18.8304 0.778571 20.3679 0.753571 20.4591C-3.08143 34.1666 8.88482 28.3779 10.5548 27.5141C12.4089 28.4297 14.4495 28.9045 16.5173 28.9016C22.3798 28.9016 27.3673 25.1604 29.2236 19.9354H22.1411C21.0923 21.7054 19.0748 22.9054 16.7561 22.9054C13.3598 22.9054 10.6061 20.3316 10.6061 17.1579H29.8886C29.9627 16.5887 29.9998 16.0108 29.9998 15.4216ZM27.4811 2.15538C28.6423 2.93913 29.5736 4.16788 27.9736 8.31288C26.4282 5.82674 24.118 3.90907 21.3898 2.84788C22.6373 2.24538 25.7273 0.97163 27.4811 2.15538ZM2.80982 27.4866C1.86357 26.5166 1.69732 24.1554 3.78357 19.8516C4.83416 22.8597 6.91299 25.4002 9.65357 27.0254C8.30357 27.7691 4.71607 29.4429 2.80982 27.4866ZM10.5748 13.4704C10.6823 10.3854 13.3686 7.91538 16.6673 7.91538C19.9673 7.91538 22.6511 10.3854 22.7598 13.4704H10.5748Z"
+                        fill="#007EA7" class="transition-colors duration-300 group-hover:fill-white"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_83479_2762">
+                        <rect width="30" height="30" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+
+                </div>
+
+                <!-- Title + Arrow -->
+                <div class="flex min-w-0 flex-1 items-center justify-between gap-2">
+
+                  <h3 class="helvetica-light text-2xl text-deep-blue leading-109">
+                    Internet Plan Comparisons
+                  </h3>
+
+                  <!-- Arrow -->
+                  <div class="flex items-center justify-center">
+                    <img width="15" height="9" src="/assets/images/svg/faq-arro.svg" alt="arrow">
+                  </div>
+
+                </div>
+
+              </label>
+
+              <!-- Description -->
+              <div class="grid grid-rows-[0fr] transition-all duration-300 peer-checked:grid-rows-[1fr]">
+
+                <div class="overflow-hidden">
+
+                  <p class="px-4 pb-4 pl-[102px] helvetica-light text-base font-normal leading-113 text-deep-blue">
+                    Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best
+                    provider.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================================= -->
+            <!-- FAQ 4: Closed -->
+            <!-- ================================= -->
+            <div class=" border border-black/10 shadow-[0px_0px_13.9px_0px_#0000001A]">
+
+              <input type="checkbox" id="faq-4" class="peer hidden">
+
+              <label for="faq-4"
+                class="group flex cursor-pointer items-center gap-6 p-[14px] select-none peer-checked:[&_svg]:rotate-180">
+
+                <!-- Icon -->
+                <div class="group flex items-center justify-center rounded-full w-16 h-16 bg-light-sky transition-all duration-300 group-hover:bg-prussian-blue">
+
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M31.8425 16.4179L28.3766 11.3129L31.8425 6.20793C32.0045 5.96444 32.0438 5.6605 31.9495 5.384C31.8543 5.10751 31.6364 4.89051 31.359 4.79901L20.0466 1.04904C19.6419 0.912602 19.2043 1.06641 18.9699 1.41797L16 5.87288L13.03 1.41797C12.7938 1.0646 12.3525 0.911664 11.9533 1.04904L0.640889 4.79901C0.363517 4.89057 0.145581 5.10757 0.0503942 5.384C-0.0439176 5.6605 -0.0045429 5.96444 0.157518 6.208L3.62337 11.313L0.157581 16.4179C-0.0044804 16.6614 -0.0438551 16.9654 0.0504567 17.2418C0.145643 17.5183 0.363579 17.7353 0.640952 17.8268L11.9534 21.5768C12.3515 21.7107 12.7944 21.5613 13.03 21.2079L16 16.753L18.97 21.2079C19.2059 21.5616 19.649 21.7106 20.0467 21.5768L31.3591 17.8268C31.6365 17.7353 31.8544 17.5183 31.9496 17.2418C32.0439 16.9654 32.0045 16.6614 31.8425 16.4179ZM16 14.0751L7.71365 11.313L16 8.55085L24.2864 11.313L16 14.0751Z"
+                      fill="#007EA7" class="transition-colors duration-300 group-hover:fill-white"/>
+                    <path
+                      d="M20.6397 23.3563C19.4597 23.7522 18.1256 23.3229 17.4098 22.2485L16 20.1338L14.59 22.2485C13.8755 23.3208 12.543 23.7541 11.3554 23.3545L3.8125 20.8403V26.3134C3.8125 26.7172 4.07069 27.0752 4.45337 27.2024L15.6978 30.9506C15.7317 30.9625 15.7655 30.9716 15.7994 30.979C15.7994 30.979 15.8003 30.979 15.8003 30.9799H15.8013C15.8672 30.9936 15.934 31.001 16 31.001C16.0705 31.001 16.14 30.9927 16.2096 30.9771C16.2407 30.9698 16.2709 30.9616 16.3012 30.9515L27.5465 27.2025C27.9291 27.0752 28.1873 26.7172 28.1873 26.3134V20.8405L20.6397 23.3563Z"
+                      fill="#007EA7" class="transition-colors duration-300 group-hover:fill-white"/>
+                  </svg>
+
+
+                </div>
+
+                <!-- Title + Arrow -->
+                <div class="flex min-w-0 flex-1 items-center justify-between gap-2">
+
+                  <h3 class="helvetica-light text-2xl text-deep-blue leading-109">
+                    Bundle Packages
+                  </h3>
+
+                  <!-- Arrow -->
+                  <div class="flex items-center justify-center">
+                    <img width="15" height="9" src="/assets/images/svg/faq-arro.svg" alt="arrow">
+                  </div>
+
+                </div>
+
+              </label>
+
+              <!-- Description -->
+              <div class="grid grid-rows-[0fr] transition-all duration-300 peer-checked:grid-rows-[1fr]">
+
+                <div class="overflow-hidden">
+
+                  <p class="px-4 pb-4 pl-[102px] helvetica-light text-base font-normal leading-113 text-deep-blue">
+                    Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best
+                    provider.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="right-for max-w-[530px] w-full mr-[-21px]">
+          <img width="530" height="535" class="" src="/assets/images/png/p4-img-1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-five">
+    <div class="container-five max-w-[1180px] mx-auto pt-[162px] px-5 max-xl:pt-20 max-md:pt-10">
+      <p class="text-deep-blue text-5xl helvetica-lite text-center leading-111">Why Choose Us for <span
+          class="text-deep-blue text-5xl helvetica-bold">Utilities</span></p>
+      <p class="text-deep-blue text-base helvetica-lite max-w-[620px] mt-4 text-center mx-auto mb-[58px] leading-150">
+        This
+        emphasizes both the
+        action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd
+        like any adjustments!</p>
+      <div class="row-five flex justify-between gap-6 max-lg:flex-wrap gap-y-10">
+        <div class="left-five max-w-[424px] bg-prussian-blue p-10">
+          <div class="flex"><img width="277" height="278" src="/assets/images/png/p5-img-1.png" alt=""></div>
+          <div class="mt-[30px]">
+            <p class="helvetica-lite text-2xl text-white leading-110">Tailored Recommendations</p>
+            <p class="helvetica-lite text-base mt-3 text-white leading-150">Our platform analyzes your unique energy
+              needs and
+              preferences to suggest the best utility providers, ensuring you get the most personalized options
+              available.</p>
+            <button class="bg-white px-[26px] py-[22px] cursor-pointer rounded-[446px] mt-[22px]"><img width="12"
+                height="8" src="/assets/images/svg/p4-button-img.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="right-five flex flex-wrap gap-6 min-w-[692px] max-sm:min-w-0 max-sm:flex-wrap">
+          <!-- 1st Card -->
+          <div
+            class="max-w-[334px] px-6 pt-[23px] pb-[23.75px] border border-navy-mist/10 shadow-[0px_0px_13.9px_0px_#0000001A]">
+            <div class="flex">
+              <img width="60" height="60" src="/assets/images/svg/p5-c-1.svg" alt="">
+            </div>
+            <div class="">
+              <h3 class="helvetica-lite text-2xl text-color-dark mt-[18px] mb-3 leading-109">Simplified Comparison
+                Process</h3>
+              <p class="helvetica-lite text-base text-color-deep-blue/90 leading-150">Our intuitive platform lets you
+                compare the
+                best utility providers in one place, helping you make a quick and informed decision.</p>
+            </div>
+          </div>
+          <!-- 2nd Card -->
+          <div
+            class="max-w-[334px] px-6 pt-[23px] pb-[23.75px] border border-navy-mist/10 shadow-[0px_0px_13.9px_0px_#0000001A]">
+            <div class="flex">
+              <img width="60" height="60" src="/assets/images/svg/p5-card-2.svg" alt="">
+            </div>
+            <div class="">
+              <h3 class="helvetica-lite text-2xl text-color-dark mt-[18px] mb-3 leading-109">Simplified Comparison
+                Process</h3>
+              <p class="helvetica-lite text-base text-color-deep-blue/90 leading-150">Our intuitive platform lets you
+                compare the
+                best utility providers in one place, helping you make a quick and informed decision.</p>
+            </div>
+          </div>
+          <!-- 3rd CArd -->
+          <div
+            class="max-w-[334px] px-6 pt-[23px] pb-[23.75px] border border-navy-mist/10 shadow-[0px_0px_13.9px_0px_#0000001A]">
+            <div class="flex">
+              <img width="60" height="60" src="/assets/images/svg/p5-card-3.svg" alt="">
+            </div>
+            <div class="">
+              <h3 class="helvetica-lite text-2xl text-color-dark mt-[18px] mb-3 leading-109">Simplified Comparison
+                Process</h3>
+              <p class="helvetica-lite text-base text-color-deep-blue/90 leading-150">Our intuitive platform lets you
+                compare the
+                best utility providers in one place, helping you make a quick and informed decision.</p>
+            </div>
+          </div>
+          <!-- 4th Card -->
+          <div
+            class="max-w-[334px] px-6 pt-[23px] pb-[23.75px] border border-navy-mist/10 shadow-[0px_0px_13.9px_0px_#0000001A]">
+            <div class="flex">
+              <img width="60" height="60" src="/assets/images/svg/p5-card-4.svg" alt="">
+            </div>
+            <div class="">
+              <h3 class="helvetica-lite text-2xl text-color-dark mt-[18px] mb-3 leading-109">Simplified Comparison
+                Process</h3>
+              <p class="helvetica-lite text-base text-color-deep-blue/90 leading-150">Our intuitive platform lets you
+                compare the
+                best utility providers in one place, helping you make a quick and informed decision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-six">
+    <div class="container max-w-[1324px] mx-auto py-[162px] px-5 max-lg:py-20">
+      <h2 class="text-deep-blue helvetica-lite text-5xl text-center mx-auto leading-111">Our <span
+          class="helvetica-bold text-deep-blue text-5xl">Testimonials</span></h2>
+      <p class="max-w-[490px] text-center mx-auto text-deep-blue text-base helvetica-lite mt-4 mb-[62px] leading-150">
+        Lorem ipsum
+        dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum</p>
+      <div class="mx-auto w-full">
+        <!-- Slider Wrapper -->
+        <div class="flex items-center justify-between">
+
+          <!-- Previous Button -->
+          <button id="prevBtn"
+            class="prev-btn flex h-[40px] w-[40px] items-center justify-center border rounded-full border-deep-blue">
+            <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.5198 0.400182C10.6643 0.534119 10.781 0.695202 10.8632 0.874232C10.9454 1.05326 10.9915 1.24673 10.9989 1.44359C11.0064 1.64046 10.9749 1.83685 10.9065 2.02157C10.838 2.20629 10.7338 2.37571 10.5998 2.52015L3.54606 10L10.5998 17.4799C10.7338 17.6244 10.838 17.7938 10.9064 17.9785C10.9749 18.1632 11.0063 18.3596 10.9989 18.5565C10.9915 18.7533 10.9453 18.9468 10.8631 19.1258C10.7809 19.3048 10.6643 19.4659 10.5198 19.5999C10.3754 19.7338 10.206 19.838 10.0213 19.9065C9.83654 19.9749 9.64015 20.0064 9.4433 19.9989C9.24644 19.9915 9.05298 19.9454 8.87395 19.8632C8.69493 19.781 8.53384 19.6643 8.3999 19.5199L0.400168 11.02C0.142934 10.7426 0 10.3783 0 10C0 9.62174 0.142934 9.25741 0.400168 8.98004L8.3999 0.480181C8.53383 0.335714 8.69491 0.219045 8.87394 0.136838C9.05297 0.0546308 9.24644 0.00849564 9.44329 0.00106689C9.64015 -0.00636186 9.83655 0.0250615 10.0213 0.0935422C10.206 0.162023 10.3754 0.26622 10.5198 0.400182Z"
+                fill="#00171F" />
+            </svg>
+
+          </button>
+
+          <!-- Slider -->
+          <div class="w-full overflow-hidden max-w-[1140px]">
+
+            <div id="sliderTrack" class="flex gap-6 transition-transform duration-500 ease-in-out max-w-[1140px]">
+
+              <!-- Card 1 -->
+              <div
+                class="min-w-[364px] w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)]">
+
+                <div class="flex items-center gap-2">
+                  <div class="w-[60px] h-[60px] flex">
+                    <img width="60" height="60" src="/assets/images/png/slider-img-1.png" class="object-cover"
+                      alt="profile-pic">
+                  </div>
+
+                  <div>
+                    <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                    <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+
+                </div>
+
+                <p class="helvetica-lite text-base text-deep-blue leading-150">
+                  Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio
+                  adipiscing elit vitae vestibulum vestibulum.
+                </p>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="min-w-[364px] w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)]">
+
+                <div class="flex items-center gap-2">
+                  <div class="w-[60px] h-[60px] flex">
+                    <img width="60" height="60" src="/assets/images/png/slider-img-2.png" class="object-cover"
+                      alt="profile-pic">
+                  </div>
+
+                  <div>
+                    <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                    <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+
+                </div>
+
+                <p class="helvetica-lite text-base text-deep-blue leading-150">
+                  Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio
+                  adipiscing elit vitae vestibulum vestibulum.
+                </p>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="min-w-[364px] w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)]">
+
+                <div class="flex items-center gap-2">
+                  <div class="w-[60px] h-[60px] flex">
+                    <img width="60" height="60" src="/assets/images/png/slider-img-3.png" class="object-cover"
+                      alt="profile-pic">
+                  </div>
+
+                  <div>
+                    <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                    <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+
+                </div>
+
+                <p class="helvetica-lite text-base text-deep-blue leading-150">
+                  Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio
+                  adipiscing elit vitae vestibulum vestibulum.
+                </p>
+              </div>
+
+              <!-- Card 4 -->
+              <div
+                class="min-w-[364px] w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)]">
+
+                <div class="flex items-center gap-2">
+                  <div class="w-[60px] h-[60px] flex">
+                    <img width="60" height="60" src="/assets/images/png/slider-img-1.png" class="object-cover"
+                      alt="profile-pic">
+                  </div>
+
+                  <div>
+                    <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                    <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+
+                </div>
+
+                <p class="helvetica-lite text-base text-deep-blue leading-150">
+                  Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio
+                  adipiscing elit vitae vestibulum vestibulum.
+                </p>
+              </div>
+
+              <!-- Card 5 -->
+              <div
+                class="min-w-[364px] w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)]">
+
+                <div class="flex items-center gap-2">
+                  <div class="w-[60px] h-[60px] flex">
+                    <img width="60" height="60" src="/assets/images/png/slider-img-1.png" class="object-cover"
+                      alt="profile-pic">
+                  </div>
+
+                  <div>
+                    <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                    <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+
+                </div>
+
+                <p class="helvetica-lite text-base text-deep-blue leading-150">
+                  Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio
+                  adipiscing elit vitae vestibulum vestibulum.
+                </p>
+              </div>
+
+              <!-- Card 6 -->
+              <div
+                class="min-w-[364px] w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)]">
+
+                <div class="flex items-center gap-2">
+                  <div class="w-[60px] h-[60px] flex">
+                    <img width="60" height="60" src="/assets/images/png/slider-img-2.png" class="object-cover"
+                      alt="profile-pic">
+                  </div>
+
+                  <div>
+                    <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                    <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+
+                </div>
+
+                <p class="helvetica-lite text-base text-deep-blue leading-150">
+                  Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio
+                  adipiscing elit vitae vestibulum vestibulum.
+                </p>
+              </div>
+
+              <!-- Card 7 -->
+              <div
+                class="min-w-[364px] w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)]">
+
+                <div class="flex items-center gap-2">
+                  <div class="w-[60px] h-[60px] flex">
+                    <img width="60" height="60" src="/assets/images/png/slider-img-1.png" class="object-cover"
+                      alt="profile-pic">
+                  </div>
+
+                  <div>
+                    <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                    <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+
+                </div>
+
+                <p class="helvetica-lite text-base text-deep-blue leading-150">
+                  Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio
+                  adipiscing elit vitae vestibulum vestibulum.
+                </p>
+              </div>
+
+              <!-- Card 8 -->
+              <div
+                class="min-w-[364px] w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)]">
+
+                <div class="flex items-center gap-2">
+                  <div class="w-[60px] h-[60px] flex">
+                    <img width="60" height="60" src="/assets/images/png/slider-img-1.png" class="object-cover"
+                      alt="profile-pic">
+                  </div>
+
+                  <div>
+                    <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                    <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+                  <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img width="14.94"
+                      height="13.7" src="/assets/images/svg/Star-slider.svg" alt="star"></div>
+
+                </div>
+
+                <p class="helvetica-lite text-base text-deep-blue leading-150">
+                  Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio
+                  adipiscing elit vitae vestibulum vestibulum.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Next Button -->
+          <button id="nextBtn"
+            class="next-btn flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-full bg-[#00171F] text-[22px] leading-none text-white">
+            <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.480171 0.400182C0.335707 0.534119 0.219041 0.695202 0.136835 0.874232C0.0546293 1.05326 0.00849533 1.24673 0.00106716 1.44359C-0.00636196 1.64046 0.0250597 1.83685 0.0935392 2.02157C0.162019 2.20629 0.266213 2.37571 0.400174 2.52015L7.45394 10L0.400174 17.4799C0.26623 17.6244 0.162049 17.7938 0.0935793 17.9785C0.0251102 18.1632 -0.00630856 18.3596 0.00112057 18.5565C0.00854874 18.7533 0.054678 18.9468 0.136873 19.1258C0.219069 19.3048 0.335722 19.4659 0.480171 19.5999C0.62462 19.7338 0.794037 19.838 0.978748 19.9065C1.16346 19.9749 1.35985 20.0064 1.5567 19.9989C1.75356 19.9915 1.94702 19.9454 2.12605 19.8632C2.30507 19.781 2.46616 19.6643 2.6001 19.5199L10.5998 11.02C10.8571 10.7426 11 10.3783 11 10C11 9.62174 10.8571 9.25741 10.5998 8.98004L2.6001 0.480181C2.46617 0.335714 2.30509 0.219045 2.12606 0.136838C1.94703 0.0546308 1.75356 0.00849564 1.55671 0.00106689C1.35985 -0.00636186 1.16345 0.0250615 0.978741 0.0935422C0.794027 0.162023 0.624612 0.26622 0.480171 0.400182Z"
+                fill="white" />
+            </svg>
+
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-seven">
+    <div class="container-seven max-w-[956px] px-5 pb-[162px] mx-auto max-xl:pb-20">
+      <h2 class="text-5xl helvetica-lite text-center mx-auto leading-111">Frequently Asked <span
+          class="helvetica-bold text-5xl">Questions</span></h2>
+      <p class="text-center helvetica-lite text-base max-w-[610px] mx-auto leading-150 mt-4 mb-[52px]">Lorem ipsum dolor
+        sit amet consectetur.
+        Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum</p>
+
+      <div class="flex flex-col gap-7 bg-gray-50 font-sans">
+
+        <!-- Accordion Item 1 (Active by default) -->
+        <div
+          class="faq-item group rounded-md shadow-sm overflow-hidden bg-white text-black transition-colors duration-300 [&.active]:bg-prussian-blue [&.active]:text-white active">
+          <button
+            class="faq-toggle w-full flex justify-between items-center p-6 bg-transparent border-none cursor-pointer text-left text-lg font-medium tracking-wide"
+            aria-expanded="true">
+            <span class="helvetica-lite text-2xl leading-110">Can I switch providers if I’m currently in a
+              contract?</span>
+            <!-- Circle Icon Container -->
+            <span
+              class="faq-icon relative w-7 h-7 border-2 border-current rounded-full shrink-0 flex items-center justify-center transition-all duration-300">
+              <!-- Horizontal line (Always visible) -->
+              <span class="absolute w-3 h-0.5 bg-current"></span>
+              <!-- Vertical line (Hidden on active) -->
+              <span
+                class="faq-line-v absolute w-0.5 h-3 bg-current transition-all duration-300 group-[.active]:scale-0 group-[.active]:rotate-90"></span>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-[max-height] duration-300 ease-out">
+            <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600 group-[.active]:text-white/90">
+              <p class="helvetica-lite text-base max-w-[722px] leading-150">Yes, but some contracts may include exit
+                fees. We can guide you through the terms of your current plan
+                and help you determine if switching now makes sense for you.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div
+          class="faq-item group rounded-md shadow-sm overflow-hidden bg-white text-black transition-colors duration-300 [&.active]:bg-prussian-blue [&.active]:text-white">
+          <button
+            class="faq-toggle w-full flex justify-between items-center p-6 bg-transparent border-none cursor-pointer text-left text-lg font-medium tracking-wide"
+            aria-expanded="false">
+            <span class="helvetica-lite text-2xl leading-110">Will my service be interrupted if I switch
+              providers?</span>
+            <span
+              class="faq-icon relative w-7 h-7 border-2 border-current rounded-full shrink-0 flex items-center justify-center transition-all duration-300">
+              <span class="absolute w-3 h-0.5 bg-current"></span>
+              <span
+                class="faq-line-v absolute w-0.5 h-3 bg-current transition-all duration-300 group-[.active]:scale-0 group-[.active]:rotate-90"></span>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-[max-height] duration-300 ease-out">
+            <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600 group-[.active]:text-white/90">
+              <p class="helvetica-lite text-base max-w-[722px] leading-150">Yes, but some contracts may include exit
+                fees. We can guide you through the terms of your current plan
+                and help you determine if switching now makes sense for you.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div
+          class="faq-item group rounded-md shadow-sm overflow-hidden bg-white text-black transition-colors duration-300 [&.active]:bg-prussian-blue [&.active]:text-white">
+          <button
+            class="faq-toggle w-full flex justify-between items-center p-6 bg-transparent border-none cursor-pointer text-left text-lg font-medium tracking-wide"
+            aria-expanded="false">
+            <span class="helvetica-lite text-2xl leading-110">How long does it take to switch providers?</span>
+            <span
+              class="faq-icon relative w-7 h-7 border-2 border-current rounded-full shrink-0 flex items-center justify-center transition-all duration-300">
+              <span class="absolute w-3 h-0.5 bg-current"></span>
+              <span
+                class="faq-line-v absolute w-0.5 h-3 bg-current transition-all duration-300 group-[.active]:scale-0 group-[.active]:rotate-90"></span>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-[max-height] duration-300 ease-out">
+            <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600 group-[.active]:text-white/90">
+              <p class="helvetica-lite text-base max-w-[722px] leading-150">Yes, but some contracts may include exit
+                fees. We can guide you through the terms of your current plan
+                and help you determine if switching now makes sense for you.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div
+          class="faq-item group rounded-md shadow-sm overflow-hidden bg-white text-black transition-colors duration-300 [&.active]:bg-prussian-blue [&.active]:text-white">
+          <button
+            class="faq-toggle w-full flex justify-between items-center p-6 bg-transparent border-none cursor-pointer text-left text-lg font-medium tracking-wide [&.active]:bg-prussian-blue"
+            aria-expanded="false">
+            <span class="helvetica-lite text-2xl leading-110">Is there a fee for switching providers?</span>
+            <span
+              class="faq-icon relative w-7 h-7 border-2 border-current rounded-full shrink-0 flex items-center justify-center transition-all duration-300">
+              <span class="absolute w-3 h-0.5 bg-current"></span>
+              <span
+                class="faq-line-v absolute w-0.5 h-3 bg-current transition-all duration-300 group-[.active]:scale-0 group-[.active]:rotate-90"></span>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-[max-height] duration-300 ease-out">
+            <div class="px-6 pb-6 text-sm leading-relaxed text-gray-600 group-[.active]:text-white/90">
+              <p class="helvetica-lite text-base max-w-[722px] leading-150">Yes, but some contracts may include exit
+                fees. We can guide you through the terms of your current plan
+                and help you determine if switching now makes sense for you.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="px-5">
+    <div class="container-eight bg-light-sky max-w-[1140px] mx-auto z-20 relative mb-[-164px]">
+      <div class="row-eight py-[54px] relative max-md:p-5">
+        <h2 class="helvetica-lite text-center text-5xl max-sm:text-4xl text-deep-blue leading-111">Join Our <span
+            class="helvetica-bold text-5xl max-sm:text-4xl text-deep-blue">Newsletter</span></h2>
+        <p class="helvetica-lite text-base max-sm:text-sm max-sm:max-w-[80%] text-deep-blue max-w-[620px] text-center mx-auto mt-4 mb-[38px]">Stay up to
+          date with the
+          latest deals, energy-saving tips, and exclusive offers! Sign up for our newsletter and never miss out on great
+          savings opportunities again.</p>
+        <div
+          class="flex max-w-[476px] bg-white mx-auto border border-black/20 rounded-tr-[100px] rounded-br-[100px] rounded-bl-[20px] py-[9px] pr-[9px] pl-[22px] gap-5">
+          <input type="text" placeholder="Enter your email"
+            class="placeholder:text-deep-blue/50 helvetica-lite text-base leading-100 w-full outline-none">
+          <button
+            class="helvetica-bold cursor-pointer leading-113 flex px-5 gap-[3px] py-3 items-center bg-cerulean-blue rounded-tr-[50px] rounded-br-[50px] rounded-bl-[20px] text-white
+            transition-all duration-300 ease-in-out
+           hover:bg-white hover:text-sky-blue
+            hover:ring-1 hover:ring-bg-sky-blue">
+            Submit
+            <span class="w-6 h-6 flex items-center justify-center">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="transition-colors duration-300">
+
+                    <path d="M0.966797 13.9668L13.9668 0.966797M1.4868 0.966797H13.9668V13.4468" stroke="currentColor"
+                      stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+          </button>
+        </div>
+        <img width="300" height="300" class="absolute left-0 bottom-0" src="/assets/images/png/animation.png"
+          alt="animation">
+        <img width="300" height="300" class="absolute right-0 top-0" src="/assets/images/png/animation-2.png"
+          alt="animation">
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[url(/assets/images/webp/footer-bg.webp)]">
+    <div class="container-footer max-w-[1180px] px-5 mx-auto pt-[232px]">
+      <div class="row-footer flex-wrap flex justify-between">
+        <div class="left-footer max-w-[297px] mb-[56.55px]">
+          <a href="#"><img width="223" height="84.95" src="/assets/images/svg/logo-footer.svg" alt="logo"></a>
+          <p class="text-white helvetica-lite text-base leading-150 mt-7 mb-9">Ut auctor nisi mauris eu tincidunt
+            facilisi. Diam amet sollicitudin pretium maecenas ornare lacus arcu adipiscing. </p>
+          <p class="helvetica-bold text-white helvetica-bold text-xl leading-115 mb-4">Follow Us</p>
+          <div class="flex gap-[15.39px]">
+            <a href="https://www.linkedin.com/" target="_blank">
+              <div class="w-[33.5px] h-[33.5px] flex justify-center items-center border border-white rounded-full transition-all duration-300
+               hover:shadow-lg hover:-translate-y-1">
+                <img width="15.96" height="15.7" src="/assets/images/svg/linkdin.svg" alt="linkdin">
+              </div>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <div class="w-[33.5px] h-[33.5px] flex justify-center items-center border border-white rounded-full transition-all duration-300
+               hover:shadow-lg hover:-translate-y-1">
+                <img width="20.1" height="20.1" src="/assets/images/svg/instagram.svg" alt="linkdin">
+              </div>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <div class="w-[33.5px] h-[33.5px] flex justify-center items-center border border-white rounded-full transition-all duration-300
+               hover:shadow-lg hover:-translate-y-1">
+                <img width="20.1" height="20.1" src="/assets/images/svg/facebook.svg" alt="linkdin">
+              </div>
+            </a>
+            <a href="https://x.com/" target="_blank">
+              <div class="w-[33.5px] h-[33.5px] flex justify-center items-center border border-white rounded-full transition-all duration-300
+               hover:shadow-lg hover:-translate-y-1">
+                <img width="20.1" height="20.1" src="/assets/images/svg/twitter.svg" alt="linkdin">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="right-footer max-w-[312px] w-full flex justify-between">
+          <div class="">
+            <h2 class="helvetica-bold text-xl text-white leading-150 mb-3">Quick Link</h2>
+            <ul class="flex flex-col gap-[14px]">
+              <li><a href="#" class="text-white helvetica-lite text-base block leading-113 relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full w-fit">About</a></li>
+              <li><a href="#" class="text-white helvetica-lite text-base block leading-113 relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full w-fit">How It Works</a></li>
+              <li><a href="#" class="text-white helvetica-lite text-base block leading-113 relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full w-fit">Services</a></li>
+              <li><a href="#" class="text-white helvetica-lite text-base block leading-113 relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full w-fit">Testimonials</a></li>
+              <li><a href="#" class="text-white helvetica-lite text-base block leading-113 relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full w-fit">Why Us</a></li>
+              <li><a href="#" class="text-white helvetica-lite text-base block leading-113 relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full w-fit">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h2 class="helvetica-bold text-xl text-white leading-150 mb-3">Services</h2>
+            <ul class="flex flex-col gap-[14px]">
+              <li><a href="#" class="text-white helvetica-lite text-base block leading-113 relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full w-fit">Privacy Policy</a></li>
+              <li><a href="#" class="text-white helvetica-lite text-base block leading-113 relative after:absolute after:left-0 after:-bottom-1
+         after:h-[1px] after:w-0 after:bg-white
+         after:transition-all after:duration-300
+         hover:after:w-full w-fit">Terms of Services</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/20 py-5">
+      <p class="text-white text-center helvetica-lite text-sm leading-150">© 2024 BILL CENTRAL, Inc. All Rights
+        Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/script.js"></script>
+  </body>
+
+</html>
