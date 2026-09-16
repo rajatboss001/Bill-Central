@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Central</title>
+    <link rel="icon" type="image/ico" href="/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <style type="text/tailwindcss">
+        @theme {
+        --leading-100: 100%;
+        --leading-109: 109%;
+        --leading-110: 110%;
+        --leading-111: 111%;
+        --leading-113: 113%;
+        --leading-115: 115%;
+        --leading-121: 121%;
+        --leading-150: 150%;
+        --leading-163: 163%;
+
+        --text-custom-xl: 22px;
+        --text-custom-3xl: 32px;
+        --text-custom-2xl: 28px;
+        --text-custom-6xl: 64px;
+        --text-custom-4xl: 38px;
+
+        --color-dark: #010101;
+        --color-sky-blue: #00a8e8;
+        --color-deep-blue: #00171f;
+        --color-light-sky: #EAF9FF;
+        --color-light-blue: #EAF9FFF0;
+        --color-emerald-green: #03B57A;
+        --color-cerulean-blue: #007EA7;
+        --color-navy-mist: #00171F1A;
+        --color-custom-gray: #4b4b4b;
+        --color-prussian-blue: #003459;
+
+        --animate-marquee: marquee 25s linear infinite; @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } } }
+        
+      
+    </style>
+</head>
+
+<body>
+    <div class="relative max-w-[1284px] mx-auto">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div
+                    class="swiper-slide w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)] max-w-[364px] bg-white">
+                        <div class="flex items-center gap-2">
+                            <div class="w-[60px] h-[60px] flex">
+                                <img width="60" height="60" src="/assets/images/png/slider-img-1.png"
+                                    class="object-cover" alt="profile-pic">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                                <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+
+                        </div>
+
+                        <p class="helvetica-lite text-base text-deep-blue leading-150 text-left">
+                            Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia
+                            odio
+                            adipiscing elit vitae vestibulum vestibulum.
+                        </p>
+                    
+                </div>
+                <div
+                    class="swiper-slide w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)] max-w-[364px] bg-white">
+                        <div class="flex items-center gap-2">
+                            <div class="w-[60px] h-[60px] flex">
+                                <img width="60" height="60" src="/assets/images/png/slider-img-1.png"
+                                    class="object-cover" alt="profile-pic">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                                <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+
+                        </div>
+
+                        <p class="helvetica-lite text-base text-deep-blue leading-150 text-left">
+                            Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia
+                            odio
+                            adipiscing elit vitae vestibulum vestibulum.
+                        </p>
+                    
+                </div>
+                <div
+                    class="swiper-slide w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)] max-w-[364px] bg-white">
+                        <div class="flex items-center gap-2">
+                            <div class="w-[60px] h-[60px] flex">
+                                <img width="60" height="60" src="/assets/images/png/slider-img-1.png"
+                                    class="object-cover" alt="profile-pic">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                                <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+
+                        </div>
+
+                        <p class="helvetica-lite text-base text-deep-blue leading-150 text-left">
+                            Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia
+                            odio
+                            adipiscing elit vitae vestibulum vestibulum.
+                        </p>
+                    
+                </div>
+                <div
+                    class="swiper-slide w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)] max-w-[364px] bg-white">
+                        <div class="flex items-center gap-2">
+                            <div class="w-[60px] h-[60px] flex">
+                                <img width="60" height="60" src="/assets/images/png/slider-img-1.png"
+                                    class="object-cover" alt="profile-pic">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                                <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+
+                        </div>
+
+                        <p class="helvetica-lite text-base text-deep-blue leading-150 text-left">
+                            Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia
+                            odio
+                            adipiscing elit vitae vestibulum vestibulum.
+                        </p>
+                    
+                </div>
+                <div
+                    class="swiper-slide w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)] max-w-[364px] bg-white">
+                        <div class="flex items-center gap-2">
+                            <div class="w-[60px] h-[60px] flex">
+                                <img width="60" height="60" src="/assets/images/png/slider-img-1.png"
+                                    class="object-cover" alt="profile-pic">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                                <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+
+                        </div>
+
+                        <p class="helvetica-lite text-base text-deep-blue leading-150 text-left">
+                            Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia
+                            odio
+                            adipiscing elit vitae vestibulum vestibulum.
+                        </p>
+                    
+                </div>
+                <div
+                    class="swiper-slide w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)] max-w-[364px] bg-white">
+                        <div class="flex items-center gap-2">
+                            <div class="w-[60px] h-[60px] flex">
+                                <img width="60" height="60" src="/assets/images/png/slider-img-1.png"
+                                    class="object-cover" alt="profile-pic">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                                <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+
+                        </div>
+
+                        <p class="helvetica-lite text-base text-deep-blue leading-150 text-left">
+                            Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia
+                            odio
+                            adipiscing elit vitae vestibulum vestibulum.
+                        </p>
+                    
+                </div>
+                <div
+                    class="swiper-slide w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)] max-w-[364px] bg-white">
+                        <div class="flex items-center gap-2">
+                            <div class="w-[60px] h-[60px] flex">
+                                <img width="60" height="60" src="/assets/images/png/slider-img-1.png"
+                                    class="object-cover" alt="profile-pic">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                                <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+
+                        </div>
+
+                        <p class="helvetica-lite text-base text-deep-blue leading-150 text-left">
+                            Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia
+                            odio
+                            adipiscing elit vitae vestibulum vestibulum.
+                        </p>
+                    
+                </div>
+                <div
+                    class="swiper-slide w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)] max-w-[364px] bg-white">
+                        <div class="flex items-center gap-2">
+                            <div class="w-[60px] h-[60px] flex">
+                                <img width="60" height="60" src="/assets/images/png/slider-img-1.png"
+                                    class="object-cover" alt="profile-pic">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                                <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+
+                        </div>
+
+                        <p class="helvetica-lite text-base text-deep-blue leading-150 text-left">
+                            Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia
+                            odio
+                            adipiscing elit vitae vestibulum vestibulum.
+                        </p>
+                    
+                </div>
+                <div
+                    class="swiper-slide w-full p-5 border roun-[4px] border-black/10 shadow-[0px_0px_13.9px_0px_rgba(0,0,0,0.1)] max-w-[364px] bg-white">
+                        <div class="flex items-center gap-2">
+                            <div class="w-[60px] h-[60px] flex">
+                                <img width="60" height="60" src="/assets/images/png/slider-img-1.png"
+                                    class="object-cover" alt="profile-pic">
+                            </div>
+                            <div>
+                                <h3 class="text-2xl helvetica-lite text-black leading-150">Cameron</h3>
+                                <p class="text-base helvetica-lite text-blac/50 leading-150">@cameron</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[2.31px] mt-6 mb-[18px]">
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+                            <div class="w-[18px] h-[18px] bg-emerald-green flex items-center justify-center"><img
+                                    width="14.94" height="13.7" src="/assets/images/svg/star-slider.svg" alt="star">
+                            </div>
+
+                        </div>
+
+                        <p class="helvetica-lite text-base text-deep-blue leading-150 text-left">
+                            Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia
+                            odio
+                            adipiscing elit vitae vestibulum vestibulum.
+                        </p>
+                    
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+       var swiper = new Swiper('.mySwiper', { slidesPerView: 4, spaceBetween: 20, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', }, breakpoints: { 320: { slidesPerView: 1, }, 640: { slidesPerView: 2, }, 1024: { slidesPerView: 3, }, 1280: { slidesPerView: 4, } } });
+    </script>
+</body>
+
+</html>

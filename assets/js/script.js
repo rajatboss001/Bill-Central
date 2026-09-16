@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  
+
   faqItems.forEach(item => {
     const toggleButton = item.querySelector('.faq-toggle');
     const content = item.querySelector('.faq-content');
@@ -39,31 +39,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const sliderTrack = document.getElementById("sliderTrack");
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
-
-  let currentIndex = 0;
-
-  const cards = sliderTrack.children;
-  const cardWidth = 364 + 24; // Card width + gap
-  const totalCards = cards.length;
-
-  function updateSlider() {
-    sliderTrack.style.transform =
-      `translateX(-${currentIndex * cardWidth}px)`;
-  }
-
-  nextBtn.addEventListener("click", () => {
-    if (currentIndex < totalCards - 1) {
-      currentIndex++;
-      updateSlider();
-    }
-  });
-
-  prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateSlider();
-    }
-  });
