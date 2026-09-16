@@ -28,22 +28,27 @@
 }
 
 
-.swiper {
-    width: 100%;
-    height: 100%;
-}
+.swiper-slide,
+    .swiper-slide-next {
+      max-width: 364px;
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-navigation-icon {
+      display: none;
+    }
+
+    .swiper-slide {}
+
+    .swiper-slide-active {
+      max-width: 364px;
+    }
+
+    .swiper-button-prev {
+      left: unset;
+    }
